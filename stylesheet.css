@@ -1,0 +1,371 @@
+/* Adapted from the compact academic template style used by Jon Barron. */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(assets/fonts/lato-regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(assets/fonts/lato-italic.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(assets/fonts/lato-bold.woff2) format('woff2');
+}
+
+html {
+  background: #ffffff;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a,
+li {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.38;
+}
+
+body {
+  margin: 0;
+  color: #111111;
+}
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
+p {
+  margin: 0 0 12px 0;
+}
+
+ul {
+  margin: 7px 0 0 18px;
+  padding: 0;
+}
+
+li {
+  margin: 0 0 4px 0;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+h2 {
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 1.15;
+}
+
+h2 span {
+  color: #666666;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.page {
+  width: 100%;
+  max-width: 920px;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.intro,
+.section,
+.publications,
+.two-column {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.intro td,
+.section td {
+  padding: 16px;
+  vertical-align: middle;
+}
+
+.intro-text {
+  width: 65%;
+}
+
+.intro-photo {
+  width: 35%;
+  max-width: 35%;
+  text-align: center;
+  vertical-align: top;
+}
+
+.intro-photo img {
+  width: 235px;
+  max-width: 100%;
+  border-radius: 3px;
+  display: block;
+  margin: 22px auto 10px auto;
+}
+
+.name {
+  margin: 0 0 16px 0;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.links {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.collaboration-note {
+  color: #8a118a;
+  font-weight: 700;
+}
+
+.address {
+  color: #666666;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.news {
+  position: relative;
+}
+
+.news-scroll {
+  /* All updates flow in the normal page — no inner scrollbar. */
+}
+
+.two-column {
+  border-spacing: 0;
+}
+
+.column {
+  width: 50%;
+  padding: 16px;
+  vertical-align: top;
+}
+
+.left-column {
+  border-right: 1px dotted #dddddd;
+}
+
+.experience-scroll {
+  /* All entries flow in the normal page — no inner scrollbar. */
+}
+
+.entry {
+  margin: 0 0 22px 0;
+}
+
+.entry p {
+  margin-bottom: 6px;
+}
+
+.with-logo {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0 auto;
+  border: 0;
+  background: transparent;
+}
+
+.logo img {
+  max-width: 60px;
+  max-height: 60px;
+  display: block;
+  object-fit: contain;
+}
+
+.logo img[src*="mayo-symbol"],
+.logo img[src*="icahn-mount-sinai-symbol"] {
+  max-width: 54px;
+  max-height: 52px;
+}
+
+.entry-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: baseline;
+  margin: 0 0 2px 0;
+}
+
+.entry-heading .date {
+  float: none;
+  margin-left: auto;
+  text-align: right;
+}
+
+.entry-institution {
+  margin: 0 0 4px 0;
+  color: #444444;
+}
+
+.entry-detail {
+  margin: 0 0 4px 0;
+  color: #333333;
+}
+
+.date {
+  float: right;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.papertitle {
+  font-weight: 700;
+  color: #1772d0;
+}
+
+.publications {
+  border-spacing: 0 8px;
+  table-layout: fixed;
+}
+
+.paper td {
+  padding: 10px 16px;
+  vertical-align: top;
+}
+
+.paper.highlight {
+  background-color: #ffffd0;
+}
+
+.paper-media {
+  width: 150px;
+  min-width: 150px;
+  max-width: 150px;
+}
+
+.paper-info {
+  width: 78%;
+}
+
+.paper-img {
+  width: 150px;
+  height: 95px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+  border: 1px solid #dddddd;
+  display: block;
+  min-width: 150px;
+}
+
+.paper-img-contain {
+  object-fit: contain;
+  background-color: #fcfcfc;
+}
+
+.summary {
+  display: inline-block;
+  margin-top: 4px;
+  color: #d00000;
+  font-style: italic;
+}
+
+.compact-list {
+  margin-left: 22px;
+}
+
+.footer td {
+  padding-top: 30px;
+  text-align: center;
+  color: #666666;
+}
+
+.footer p,
+.footer a {
+  font-size: 13px;
+}
+
+@media (max-width: 760px) {
+  .intro td,
+  .two-column td,
+  .paper td {
+    display: block;
+    width: auto !important;
+    max-width: none !important;
+  }
+
+  .intro-photo img {
+    width: 180px;
+    margin-top: 0;
+  }
+
+  .left-column {
+    border-right: 0;
+    border-bottom: 1px dotted #dddddd;
+  }
+
+  .date {
+    float: none;
+    display: block;
+    margin-top: 2px;
+  }
+
+  .entry-heading {
+    display: block;
+  }
+
+  .entry-heading .date {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .with-logo {
+    grid-template-columns: 58px 1fr;
+    gap: 10px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo img {
+    max-width: 46px;
+    max-height: 46px;
+  }
+}

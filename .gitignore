@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Full-resolution source images — kept locally as backups, not published
+assets/originals/
+
+# Editor / OS cruft
+*.swp
+Thumbs.db
