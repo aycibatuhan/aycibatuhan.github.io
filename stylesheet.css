@@ -131,6 +131,8 @@ h2 span {
   border-radius: 3px;
   display: block;
   margin: 22px auto 10px auto;
+  object-fit: cover;
+  aspect-ratio: 1 / 1.15;
 }
 
 .name {
